@@ -2,8 +2,8 @@ import openl3
 import os
 
 
-initial_path = "D:\TinySOL\TinySOL5s"
-initial_path_out = "D:\TinySOL\embedded5s"
+initial_path = "D:\TinySOL\TinySOL1s"
+initial_path_out = "D:\TinySOL\embedded1s"
 for category in os.listdir(initial_path):
     for instrument in os.listdir(initial_path+"\\"+category):
         amount_all = len(os.listdir(initial_path+"\\"+category+"\\"+instrument+"\ordinario"))
