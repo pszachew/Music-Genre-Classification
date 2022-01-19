@@ -11,12 +11,13 @@ def clean():
 
 
 def mkdirs():
+    pth = "D:\VocalSET\\embedded_train\\"
     for gender in os.listdir("D:\VocalSET\FULL"):
-        os.mkdir("D:\VocalSET\embedded\\"+gender)
+        os.mkdir(pth+gender)
         for el in os.listdir("D:\VocalSET\FULL\\"+gender):
-            os.mkdir("D:\VocalSET\embedded\\" + gender + "\\" + el)
+            os.mkdir(pth + gender + "\\" + el)
             for x in os.listdir("D:\VocalSET\FULL\\"+gender + "\\" + el):
-                os.mkdir("D:\VocalSET\embedded\\" + gender + "\\" + el + "\\" + x)
+                os.mkdir(pth + gender + "\\" + el + "\\" + x)
 
 
 if __name__ == "__main__":
